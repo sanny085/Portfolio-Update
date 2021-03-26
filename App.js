@@ -22,8 +22,7 @@ function App() {
           </Grid> 
           <Grid item xs style={{backgroundColor: 'red'}}>
               <Header/>
-              
-              <Router> 
+                <Router> 
                  <Switch>
                  <Route path="/Portfolio" component={Portfolio}>
                          <Portfolio/>
