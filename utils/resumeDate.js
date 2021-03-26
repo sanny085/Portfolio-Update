@@ -5,7 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 
 const ResumeData = {
-    name:"SANNY KUMAR",
+    name:"SANNY KUMAR 1",
     title:"Front-end Developer",
     
     birthday:"25th December 1999",
