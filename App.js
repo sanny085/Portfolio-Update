@@ -8,9 +8,7 @@ import Resume from './pages/Resume/Resume';
 import Footer from './components/Footer/Footer';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import './App.css';
-
 
 function App() {
   return (
@@ -30,17 +28,13 @@ function App() {
                  <Route path="/">
                          <Resume/>
                  </Route>
-                  
                  </Switch>
               </Router> 
-
-              <Footer/>
+           <Footer/>
           </Grid> 
-
-        </Grid>
+     </Grid>
       </Container>
     </div>
   );
 }
-
 export default App;
