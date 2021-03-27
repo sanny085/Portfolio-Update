@@ -26,6 +26,7 @@
     width:100%;
 }
 .text_content{
+    font-size:12px;
     text-decoration:none;
     color: #787878 !important;
 }
@@ -57,4 +58,9 @@
 .timelineItem_text > span{
     color:black;
 }
-
+.profile .button_container{
+    width:100%;
+    display:flex !important;
+    justify-content:center;
+    margin-top:20px;
+}
