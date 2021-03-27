@@ -25,3 +25,17 @@
 .profile_image img{
     width:100%;
 }
+.text_content{
+    text-decoration:none;
+}
+.time_line_Item{
+    display: flex;
+    position: relative;
+    list-style: none;
+    min-height: 25px !important;
+  }
+   
+  .time_line1:last-child:after {
+    background-color: red !important;
+    border-color: red !important;
+}
