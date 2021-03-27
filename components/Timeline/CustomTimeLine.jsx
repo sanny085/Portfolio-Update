@@ -9,7 +9,6 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import { Typography } from '@material-ui/core';
  
 
-
 import './CustomTimeLine.css';
 
 
