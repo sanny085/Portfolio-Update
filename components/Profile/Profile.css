@@ -27,6 +27,7 @@
 }
 .text_content{
     text-decoration:none;
+    color: #787878 !important;
 }
 .time_line_Item{
     display: flex;
@@ -35,7 +36,25 @@
     min-height: 25px !important;
   }
    
-  .time_line1:last-child:after {
+.time_line1:last-child:after {
     background-color: red !important;
     border-color: red !important;
 }
+.profile_Information{
+    top:0px;
+    left:0px;
+    margin: -44px 10px 30px !important;
+}
+.profile_information .timeline .timeline_content{
+    margin-top:2px;
+    margin-bottom:12px;
+}
+.timelineItem_text{
+    font-size:12.5px !important;
+    color:#787878 !important;
+    font-weight:400px !important;
+}
+.timelineItem_text > span{
+    color:black;
+}
+
