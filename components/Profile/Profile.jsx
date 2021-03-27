@@ -44,16 +44,18 @@ function Profile() {
            <div className="profile_Information">
              <CustomTimeLine icon={<PersonOutlineIcon/>}>  
                  <CustomTimeLineItem  title="Name" text={ResumeData.name}/>
-                 <CustomTimeLineItem title="Title" text={ResumeData.title}/>
-                 <CustomTimeLineItem title="Email" text={ResumeData.email}/>
-             
+                 <CustomTimeLineItem title="Birthday" text={ResumeData.birthday}/>
+                 <CustomTimeLineItem title={ResumeData.Email.title} text={ResumeData.Email.subtitle} link={`mailto: ${ResumeData.Email.url}`}/>
+
                 {Object.keys(ResumeData.socials).map((key) => (
                   <CustomTimeLineItem  title={key} text={ResumeData.socials[key].title} link={ResumeData.socials[key].url}/>
                 ))}
             </CustomTimeLine>
-            <br/>
+           
+            <div className="button_container">
+                <CustomButton text="Download CV" icon={<GetAppIcon/>} />
+            </div> 
 
-              <CustomButton text="Download CV" icon={<GetAppIcon/>}/>
            </div>
       </div>
     );
