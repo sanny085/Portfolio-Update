@@ -31,9 +31,11 @@ function CustomTimeLine({icon, title, children}) {
         </TimelineItem>
         
         {children}
+
      </Timeline>
     )
 }
+
 export const CustomTimeLineSeparator = () => {
     return(
         <>
