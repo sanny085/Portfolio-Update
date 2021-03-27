@@ -6,7 +6,8 @@ import profileImage from '../../assets/images/profileImage.jpg';
 import CustomTimeLine, {CustomTimeLineSeparator} from '../Timeline/CustomTimeLine.jsx'
 import ResumeData from '../../utils/resumeDate';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
-
+import CustomButton from '../Button/Button';
+import GetAppIcon from "@material-ui/icons/GetApp";
 
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
@@ -19,9 +20,9 @@ const CustomTimeLineItem = ({title, text, link}) => {
       <TimelineItem className="time_line_Item">
        <CustomTimeLineSeparator className="time_line1"/>
          <TimelineContent className="timeline_content">
-         {link ? (<Typography className="timelineItem_text"><span>{title}:</span><a className="text_content" target="_blank" href={link} target="_blank">{text}</a></Typography>) : 
+         {link ? (<Typography className="timelineItem_text"><span>{title}: </span><a className="text_content" target="_blank" href={link} target="_blank">{text}</a></Typography>) : 
           (
-           <Typography className="timelineItem_text"><span>{title}:</span>{text}</Typography>
+           <Typography className="timelineItem_text"><span>{title}: </span>{text}</Typography>
           )}
          </TimelineContent>
       </TimelineItem>
@@ -40,7 +41,7 @@ function Profile() {
                <img src={profileImage} alt="profile_pic"/>
            </figure>
            
-           <div className="profile_information">
+           <div className="profile_Information">
              <CustomTimeLine icon={<PersonOutlineIcon/>}>  
                  <CustomTimeLineItem  title="Name" text={ResumeData.name}/>
                  <CustomTimeLineItem title="Title" text={ResumeData.title}/>
@@ -52,7 +53,7 @@ function Profile() {
             </CustomTimeLine>
             <br/>
 
-              <button>Download CV</button>
+              <CustomButton text="Download CV" icon={<GetAppIcon/>}/>
            </div>
       </div>
     );
