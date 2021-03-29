@@ -20,19 +20,19 @@ function App() {
           <Grid item xs={12} sm={12} md={4} lg={3} >
              <Profile/>
           </Grid> 
-          
-          <Grid item xs  >
+         <Grid item xs  >
             <Router> 
-               <Header/>
-                 <Switch>
-                 <Route path="/Portfolio" component={Portfolio}>
-                         <Portfolio/>
-                 </Route>
-                 <Route path="/">
-                         <Resume/>
-                 </Route>
-                  
-                 </Switch>
+              <Header/>
+                <div className="main_content container_shadow">
+                    <Switch>
+                        <Route path="/Portfolio" component={Portfolio}>
+                              <Portfolio/>
+                        </Route>
+                        <Route path="/">
+                                <Resume/>
+                        </Route>
+                    </Switch>
+                  </div>
             </Router> 
 
               <Footer/>
