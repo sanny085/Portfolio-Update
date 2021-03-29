@@ -16,14 +16,14 @@ function App() {
   return (
     <div className="App">
       <Container className="top_60">
-        <Grid container spacing={7}>
+        <Grid container spacing={4}>
           <Grid item xs={12} sm={12} md={4} lg={3} >
              <Profile/>
           </Grid> 
-          <Grid item xs style={{backgroundColor: 'red'}}>
-              <Header/>
-              
-              <Router> 
+          
+          <Grid item xs  >
+            <Router> 
+               <Header/>
                  <Switch>
                  <Route path="/Portfolio" component={Portfolio}>
                          <Portfolio/>
@@ -33,7 +33,7 @@ function App() {
                  </Route>
                   
                  </Switch>
-              </Router> 
+            </Router> 
 
               <Footer/>
           </Grid> 
