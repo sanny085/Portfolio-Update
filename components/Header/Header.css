@@ -5,15 +5,33 @@
     border-radius: 6px !important;
     box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07) !important;
 }
+.header .header_link{
+    font-weight:500 !important;
+    color:darkslategray !important;
+    text-transform:uppercase !important;
+}
+.header .header_link:hover{
+    color: var(--main-color) !important; 
+}
+.header .header_link_active{
+    font-weight:500 !important;
+    color: var(--main-color)  !important; 
+    text-transform:uppercase !important;
+} 
 
+.header_navlink {
+    display: block;
+    padding: 0rem 0.9rem 0rem 0rem;
+  
+}
 .header .header_home {
     background-color: var(--main-color);
     padding: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: inherit;
-    border-bottom-left-radius: inherit;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 .header_home:hover{
     background: var(--hover-color) !important;
