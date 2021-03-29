@@ -5,35 +5,37 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 
 const ResumeData = {
-    name:"SANNY KUMAR 1",
+    name:"Sanny Kumar",
     title:"Front-end Developer",
     
-    birthday:"25th December 1999",
-    email:"sannykumar085@gmail.com",
+    birthday:"25th Dec 1999",
     address:"Bhramarpur, Bihpur, Bhagalpur",
     Job:'Fresher',
     phone:'808 467 6664',
-     
+    Email:{
+      url: 'sannykumar085@gmail.com',
+      title: 'Email',
+      subtitle: 'sanny@gmail.com',
+    },
     socials:{
 
-      facebook:{
+      Facebook:{
           url: 'https://www.facebook.com/profile.php?id=100034132069006',
           title: 'MyFacebook',
           icon:<FacebookIcon/>,
       },
-      linkedIn:{
-        url: 'www.linkedin.com/in/sanny-kumar-9683ba17b',
-        title: 'MyLinkedIn',
-        icon:<LinkedInIcon/>,
-      },
-      github:{
+      Github:{
         url: 'https://github.com/sanny085',
         title: 'MyGithub',
         icon:<GitHubIcon/>,
-    }
+      },
+      LinkedIn:{
+        url: 'https://www.linkedin.com/in/sanny-kumar-9683ba17b/',
+        title: 'MyLinkedIn',
+        icon:<LinkedInIcon/>,
+      }
+      
   },
-
-
 
 }
 
