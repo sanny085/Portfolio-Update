@@ -20,6 +20,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Gallery from '../../components/ImageGallery/Gallery';
  
 
 
@@ -30,7 +31,7 @@ function Portfolio() {
 
 
     return (
-     <Grid container className="section p_30 pb_45">
+  <Grid container className="section p_30 pb_45">
         
 {/*Portfolio*/}
 <Grid item className="section_title top_30">
@@ -58,11 +59,11 @@ function Portfolio() {
 
 {/*Project*/}
  <Grid item xs={12}>
-    <Grid container spacing={1}>
+    <Grid container spacing={2}>
       {ResumeData.projects.map( (pro) => (
         <> 
         {tabvalue == "All" || tabvalue == pro.tag ? (
-            <Grid item key={pro}>
+         <Grid item key={pro} xs={12} sm={6} md={4} >
            <Grow in timeout={1000} key={pro}>
              <Card className="CustomCard" onClick={ ()=> setProjectDialog(pro) }>
                 <CardActionArea>
@@ -73,10 +74,10 @@ function Portfolio() {
                     title={pro.title}
                     />
                  <CardContent>
-                    <Typography classname="CustomCard_title">
+                    <Typography variant={"body2"} classname="CustomCard_title">
                         {pro.title}
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" className="CustomCard_description">
+                    <Typography variant="body2" color="textSecondary" className="CustomCard_caption">
                        {pro.caption}
                     </Typography>
                  </CardContent>
@@ -93,22 +94,27 @@ function Portfolio() {
     </Grid>
  </Grid>
 {/*End Project*/}
-<Dialog open={projectDialog} onClose={ ()=> setProjectDialog(false)}>
+<Dialog maxWidth={"lg"} fullWidth  className="projectDialog" open={projectDialog} onClose={ ()=> setProjectDialog(false)}>
         <DialogTitle onClose={ ()=> setProjectDialog(false)}>
          {projectDialog.title}
         </DialogTitle>
-        <img src={projectDialog.image} alt={projectDialog.title} className="projectDialog_image" />
-
+        
         <DialogContent>
+         {projectDialog.image && (
+             <Gallery images={projectDialog.image}/>
+         )}
+
+          <img src={projectDialog.image} alt={projectDialog.title} className="projectDialog_image" />
+    
           <Typography className="projectDialog_description"> {projectDialog.description}</Typography>
         </DialogContent>
 
         <DialogActions className="projectDialog_actions">
-        {projectDialog?.links?.map((link)=>{
-            <a href={link.link} className="href" target="_blank" className="projectDialog_icon">
-              {link.icon}
+        {projectDialog?.links?.map( (key) => (
+            <a href={key.link} className="href" target="_blank" className="projectDialog_icon">
+              {key.icon}
             </a>
-        })}
+        ))}
         </DialogActions>
     </Dialog>
      </Grid>
