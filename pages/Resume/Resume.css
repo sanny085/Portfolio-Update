@@ -1,0 +1,172 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+/*ABOUT ME*/
+.aboutme_text {
+    color: darkslategray !important;
+    font-size: smaller !important;
+    line-height: 22px !important;
+    text-align: justify;
+    white-space: pre-line !important;
+}
+.emailResume:hover{
+    text-decoration: none;
+    color:black;
+}
+.mobResume{
+    text-decoration: none;
+    color:gray;
+}
+/*END ABOUT ME*/
+h6.section_title_text{
+    font-family: 'Lato', sans-serif;
+}
+/*TIMELINE*/
+
+.timeline {
+    padding: 0 !important;
+}
+.timeline .timeline_header {
+    padding-top: 7px;
+}
+
+.timeline .MuiTimelineItem-missingOppositeContent:before {
+    display: none;
+}
+
+.timeline .separator_padding {
+    padding-left: 16px !important;
+}
+
+.timeline .timeline_dot_header {
+    color: black !important;
+    background-color: var(--main-color) !important;
+    font-size: small !important;
+    padding: 10px!important;
+}
+
+.timeline .timeline_dot {
+    color: black !important;
+    border-color: var(--main-color) !important;
+}
+
+.timeline .MuiTimelineConnector-root {
+    background-color: #eee !important;
+}
+
+.timeline .timeline_dot_header > .MuiSvgIcon-root {
+    font-size: 20px;
+    color: darkslategray;
+}
+
+.timeline .timeline_content {
+    padding-top: 0px !important;
+    margin-bottom: 20px;
+}
+ 
+.timeline .timeline_content .timeline_title {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.timeline .timeline_content .timeline_date {
+    color: darkslategray;
+}
+
+.timeline .timeline_content .timeline_description {
+    color: gray;
+    font-size: small;
+    margin-top: 6px;
+    white-space: pre-line !important;
+    text-align: justify;
+}
+
+/*END TIMELINE*/
+
+/*SERVICES*/
+
+.service {
+    height: 100%;
+    text-align: center;
+}
+
+.service .service_title {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+    text-align: center;
+}
+
+.service .service_description {
+    color: #989898 !important;
+    border-color: var(--main-color) !important;
+    margin-right: 5px !important;
+    text-align: center;
+}
+
+.service_icon > .MuiSvgIcon-root {
+    font-size: 46px !important;
+    margin-left: 0 !important;
+    font-weight: 300!important;
+    color: darkslategray !important;
+}
+
+/*END SERVICES*/
+
+/*SKILLS*/
+.skills {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
+    min-height: 186px;
+    height: 100%;
+}
+
+.skills_title {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+}
+
+.skills_description {
+    display: flex;
+    align-items: center;
+    color: #989898 !important;
+    font-weight: 400 !important;
+    line-height: 18px !important;
+}
+
+.skills_description .timeline_dot {
+    color: black !important;
+    border-color: var(--main-color) !important;
+    padding: 2px !important;
+    margin-right: 5px !important;
+
+}
+
+/*END SKILLS*/
+
+
+/*CONTACT*/
+
+.contactInfo_item {
+    line-height: 34px !important;
+    font-size: 14px !important;
+    color: #787878;
+}
+
+.contactInfo_item > span {
+    color: black;
+    font-weight: 500;
+}
+
+.contactInfo_socialsContainer {
+    margin-top: 15px;
+}
+
+.contactInfo_social > a > .MuiSvgIcon-root {
+    font-size: 16px !important;
+    margin-right: 10px;
+    color: black;
+}
+
+/*END CONTACT*/
