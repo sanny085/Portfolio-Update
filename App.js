@@ -7,7 +7,9 @@ import Portfolio from './pages/Portfolio/Portfolio';
 import Resume from './pages/Resume/Resume';
 import Footer from './components/Footer/Footer';
 
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+ 
 
 import './App.css';
 
@@ -20,7 +22,7 @@ function App() {
           <Grid item xs={12} sm={12} md={4} lg={3} >
              <Profile/>
           </Grid> 
-         <Grid item xs  >
+         <Grid item xs={12} sm={12} md={8} lg={9} >
             <Router> 
               <Header/>
                 <div className="main_content container_shadow">
