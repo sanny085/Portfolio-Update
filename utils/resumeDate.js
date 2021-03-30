@@ -117,9 +117,111 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
       description: ["Git", "GitHub"],
     },
   ],
-
-
-
+  projects: [
+    {
+      tag:'Animation',
+      image:'https://www.blog.duomly.com/wp-content/uploads/2020/06/react-js-projects-for-beginners_hud75f6dd1ee6f4b8d225f54bd20a0cfe4_22949_800x0_resize_box_2.png',
+      title:'React Project 1',
+      description:'This is my all project which shows',
+      links:[
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<FacebookIcon/>'
+        },
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<LinkedInIcon/>'
+        },
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<GitHubIcon/>'
+        },
+      ],  
+    },
+    {
+      tag:'Web Design',
+      image:'https://explore.easyprojects.net/wp-content/uploads/2016/07/Project-portfolio-management-934x640.jpg',
+      title:'Bootstrap Project 1',
+      description:'This is my all project which shows',
+      links:[
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<FacebookIcon/>'
+        },
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<LinkedInIcon/>'
+        },
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<GitHubIcon/>'
+        },
+      ],  
+    },
+    {
+      tag:'Web Design',
+      image:'https://explore.easyprojects.net/wp-content/uploads/2016/07/Project-portfolio-management-934x640.jpg',
+      title:'Bootstrap Project 1',
+      description:'This is my all project which shows',
+      links:[
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<FacebookIcon/>'
+        },
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<LinkedInIcon/>'
+        },
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<GitHubIcon/>'
+        },
+      ],  
+    },
+    {
+      tag:'React',
+      image:'https://www.blog.duomly.com/wp-content/uploads/2020/06/react-js-projects-for-beginners_hud75f6dd1ee6f4b8d225f54bd20a0cfe4_22949_800x0_resize_box_2.png',
+      title:'PHP Project 1',
+      description:'This is my all project which shows',
+      links:[
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<FacebookIcon/>'
+        },
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<LinkedInIcon/>'
+        },
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<GitHubIcon/>'
+        },
+      ],  
+    },
+    {
+      tag:'PHP',
+      image:'https://www.blog.duomly.com/wp-content/uploads/2020/06/react-js-projects-for-beginners_hud75f6dd1ee6f4b8d225f54bd20a0cfe4_22949_800x0_resize_box_2.png',
+      title:'React Project 2',
+      description:'This is my all project which shows',
+      links:[
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<FacebookIcon/>'
+        },
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<LinkedInIcon/>'
+        },
+        { 
+          link:'https://theenergyhub.000webhostapp.com/home.php',
+          icon:'<GitHubIcon/>'
+        },
+      ],  
+    },
+  
+  
+  
+  ],
 }
 
 export default ResumeData;
