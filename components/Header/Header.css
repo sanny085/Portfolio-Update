@@ -18,7 +18,6 @@
     color: var(--main-color)  !important; 
     text-transform:uppercase !important;
 } 
-
 .header_navlink {
     display: block;
     padding: 0rem 0.9rem 0rem 0rem;
@@ -36,12 +35,10 @@
 .header_home:hover{
     background: var(--hover-color) !important;
 }
-
 .header .header_right {
     display: flex !important;
     align-items: center !important;
 }
-
 .header .header_right > a > .MuiSvgIcon-root {
     font-size: 16px !important;
     margin-right: 12px;
