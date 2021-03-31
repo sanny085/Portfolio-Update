@@ -70,7 +70,7 @@ function Portfolio() {
                     <CardMedia
                     key={pro}
                     className='CustomCard_image'
-                    image={pro.image}
+                    image={pro.image[0]}
                     title={pro.title}
                     />
                  <CardContent>
@@ -94,18 +94,16 @@ function Portfolio() {
     </Grid>
  </Grid>
 {/*End Project*/}
-<Dialog maxWidth={"lg"} fullWidth  className="projectDialog" open={projectDialog} onClose={ ()=> setProjectDialog(false)}>
+<Dialog style={{width:'100wh'}} maxWidth={"lg"} fullWidth className="projectDialog" open={projectDialog} onClose={ ()=> setProjectDialog(false)}>
         <DialogTitle onClose={ ()=> setProjectDialog(false)}>
          {projectDialog.title}
         </DialogTitle>
         
-        <DialogContent>
+        <DialogContent style={{height:'80vh'}}> 
          {projectDialog.image && (
              <Gallery images={projectDialog.image}/>
          )}
 
-          <img src={projectDialog.image} alt={projectDialog.title} className="projectDialog_image" />
-    
           <Typography className="projectDialog_description"> {projectDialog.description}</Typography>
         </DialogContent>
 
