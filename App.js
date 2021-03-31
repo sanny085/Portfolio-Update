@@ -7,19 +7,16 @@ import Portfolio from './pages/Portfolio/Portfolio';
 import Resume from './pages/Resume/Resume';
 import Footer from './components/Footer/Footer';
 
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
- 
-
 import './App.css';
-
 
 function App() {
   return (
+    <>
     <div className="App">
       <Container className="top_60">
         <Grid container spacing={4}>
-          <Grid item xs={12} sm={12} md={4} lg={3} >
+          <Grid item xs={12} sm={12} md={4} lg={3}>
              <Profile/>
           </Grid> 
          <Grid item xs={12} sm={12} md={8} lg={9} >
@@ -43,6 +40,7 @@ function App() {
         </Grid>
       </Container>
     </div>
+    </>
   );
 }
 
