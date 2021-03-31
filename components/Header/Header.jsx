@@ -5,13 +5,7 @@ import { Link, NavLink, withRouter } from "react-router-dom";
 import CustomButton from "../Button/Button";
 import {
   HomeRounded,
-  SchoolRounded,
-  WorkRounded,
-  Facebook,
-  Twitter,
-  LinkedIn,
-  GitHub,
-  Telegram,
+  Telegram
 } from "@material-ui/icons";
 import ResumeData from "../../utils/resumeDate";
 
@@ -21,7 +15,8 @@ import { Grid } from "@material-ui/core";
 function Header(props) {
     const pathname = props?.location?.pathname;
     return (
-     <Navbar expand="lg" sticky="top" className="header">
+    <>
+    <Navbar expand="lg" sticky="top" className="header">
        
         <Nav.Link as={NavLink} to="./" className="header_navlink"> 
           <Navbar.Brand className="header_home">
@@ -45,16 +40,18 @@ function Header(props) {
           </Nav>
          <div className="header_right">
             {Object.keys(ResumeData.socials).map((key) => (
-              <a href={ResumeData.socials[key].link} target="_blank">
+              <a href={ResumeData.socials[key].url} target="_blank">
                 {ResumeData.socials[key].icon}
               </a>
             ))}
-            <CustomButton text={"Hire Me"} icon={<Telegram />} />
+           <a href={`mailto:${ResumeData.Email.url}`} className="Hire_me" target="_blank">
+            <CustomButton text={"Hire Me"} icon={<Telegram />}  />
+           </a>   
           </div>
         </Navbar.Collapse>
 
      </Navbar>
+   </>
     );
 }
-
 export default withRouter(Header);
