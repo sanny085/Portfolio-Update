@@ -13,6 +13,9 @@
 .header .header_link:hover{
     color: var(--main-color) !important; 
 }
+.Hire_me:hover{
+    text-decoration:none;
+}
 .header .header_link_active{
     font-weight:500 !important;
     color: var(--main-color)  !important; 
