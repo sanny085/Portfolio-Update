@@ -35,7 +35,6 @@ function CustomTimeLine({icon, title, children}) {
      </Timeline>
     )
 }
-
 export const CustomTimeLineSeparator = () => {
     return(
         <>
@@ -46,7 +45,4 @@ export const CustomTimeLineSeparator = () => {
        </>
     );
 }
-
 export default CustomTimeLine;
-
-
