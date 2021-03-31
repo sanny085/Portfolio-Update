@@ -48,7 +48,7 @@ function Profile() {
                  <CustomTimeLineItem title={ResumeData.Email.title} text={ResumeData.Email.subtitle} link={`mailto: ${ResumeData.Email.url}`}/>
 
                 {Object.keys(ResumeData.socials).map((key) => (
-                  <CustomTimeLineItem  title={key} text={ResumeData.socials[key].title} link={ResumeData.socials[key].url}/>
+                  <CustomTimeLineItem title={key} text={ResumeData.socials[key].title} link={ResumeData.socials[key].url}/>
                 ))}
             </CustomTimeLine>
            
