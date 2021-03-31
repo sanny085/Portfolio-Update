@@ -7,6 +7,10 @@ import {
   WebOutlined
 } from "@material-ui/icons";
 
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import AirplayIcon from '@material-ui/icons/Airplay';
+import CodeIcon from '@material-ui/icons/Code';
+
 const ResumeData = {
     name:"Sanny Kumar",
     title:"Front-end Developer",
