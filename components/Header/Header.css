@@ -7,7 +7,7 @@
 }
 .header_navlink {
     display: block;
-    padding: 0rem 0.9rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem !important;
 }
 .header .header_home {
     background-color: var(--main-color);
@@ -47,12 +47,18 @@
 .Hire_me:hover{
     text-decoration:none;
 }
-@media(max-width: 768px) {
-  
-   .navbar-nav .nav-link {
-    padding-right: 0  !important;
-    text-align: center  !important; 
-    justify-content:center !important;
-    display:flex  !important;
-}
+@media(max-width: 992px) {
+  .navbar-nav .nav-link {
+    padding-right: 0 !important;
+     padding-left: 10px !important;
+    text-align:center  !important;
+    justify-content: center !important;
+    display: flex !important;
+  }
+ .header .header_right {
+     padding:20px 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  } 
 }
