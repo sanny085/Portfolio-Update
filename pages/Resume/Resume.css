@@ -94,17 +94,24 @@ h6.section_title_text{
     font-weight: 500 !important;
     line-height: 35px !important;
     text-align: center;
+    padding-top:15px !important;
 }
 
 .service .service_description {
     color: #989898 !important;
     border-color: var(--main-color) !important;
     margin-right: 5px !important;
-    text-align: center;
+    text-align:inherit !important;
+    word-spacing:-0.05em;
+}
+div .service_upper .service_icon{
+    border:1px solid #999999;
+    padding:15px;
+    border-radius:100%; 
 }
 
 .service_icon > .MuiSvgIcon-root {
-    font-size: 46px !important;
+    font-size: 40px !important;
     margin-left: 0 !important;
     font-weight: 300!important;
     color: darkslategray !important;
