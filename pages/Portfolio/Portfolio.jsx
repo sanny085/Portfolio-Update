@@ -1,110 +1,132 @@
-.portfolio{
-    background-color: white;
-    border-radius:6px;
-    width:100%;
-    display:inline-block;
-}
+import React, { useState } from 'react';
+import './Portfolio.css';
 
-/*Tabs*/
-.customTabs .customTabs_item{
-    padding:0px !important;
-    min-width: 0px !important;
-    margin-right:20px !important;
-    text-transform: inherit !important;
-    font-size:14px !important;
-    font-weight: 400 !important;
-    outline-width:0px !important;
-}
-.customTabs .active{
-    color: var(--main-color) !important;
-  }
-/*End Tabs*/
+import {
 
-/*Cards*/
-.CustomCard{
-    height: 100%;
-    max-width:350px;
-    box-shadow:0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
-    border-radius:5px;
-    overflow:hidden;
-    outline-width: 0px !important;
-}
-.CustomCard .CustomCard_image{
-    height:180px;
-}
-.CustomCard .CustomCard_title{
-    font-weight:500 !important;
-    font-size: 14.5px;
-    color: #000;
-} 
-.CustomCard .CustomCard_caption{
-    font-size: 12.5px;
-    color: #989898;
-    line-height: 18px;
-    display: block;
-    font-weight:400 !important;
-}
-.media-custom {
-  background: #fff !important;
-  -webkit-transition: .2s all ease !important;;
-  -o-transition: .2s all ease !important;;
-  transition: .2s all ease !important;;
-  margin-bottom: 20px !important;;
-  position: relative !important;;
-  top: 0 !important;;
-}
-.media-custom .CustomCard_image {
-  -webkit-transition: .3s all ease !important;;
-  -o-transition: .3s all ease !important;;
-  transition: .3s all ease !important;;
-}
-.media-custom:focus .CustomCard_image, .media-custom:hover .CustomCard_image {
-  opacity: 0.7;
-  -webkit-transform: scale(1.06) !important;
-  -ms-transform: scale(1.06) !important;;
-  transform: scale(1.06) !important;;
-}
-/*End Cards*/
+    Card,
+    CardActionArea,
+    Grid,
+    Grow,
+    Tabs,
+    Typography
+} from "@material-ui/core";
+import Tab from '@material-ui/core/Tab';
+import ResumeData from "../../utils/resumeDate";
 
-/*Dialog*/
-.projectDialog{
-  width:100%;
-  height:auto !important;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  top:50;
-  left:50;
-}
-.projectDialog .projectDialog_image{
-  max-height:300px;
-  width:100%;
-  object-fit: cover;
-  object-position: center center;
-}
-.projectDialog .projectDialog_description{
-  margin-top:10px !important;
-  text-align:justify !important;
-  line-height:1.3 !important;
-}
-.projectDialog .projectDialog_actions{
-    justify-content:center !important;
-    margin-bottom:5px !important;
-}
-.projectDialog .projectDialog_icon{
-   color:darkslategray;
-   margin:0px 12px;
-   cursor:pointer;
-}
-.projectDialog .projectDialog_icon:hover{
-    color:var(--main-color) !important;
- }
- .projectDialog .projectDialog_icon > .MuiSvgIcon-root {
-    font-size:32px !important;
- }
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Nav,  Button } from 'react-bootstrap';
 
+import { Link} from "react-router-dom";
  
-  
-/*End Dialog*/
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import Gallery from '../../components/ImageGallery/Gallery';
  
-  
+
+
+function Portfolio() {
+    const [tabvalue, setTabvalue] = useState("All");
+    
+    const [projectDialog, setProjectDialog] = useState(false);
+    const [buttonColor, setButtonColor] = useState(0);
+
+    return (
+  <Grid container className="section p_30 pb_45">
+        
+{/*Portfolio*/}
+<Grid item className="section_title top_30">
+    <span></span>
+    <h6 className="section_title_text">Portfolio</h6>
+</Grid>
+{/*End Portfolio*/}
+
+{/*Tabs*/}
+<Grid item xs={12}>
+    <Tabs value={tabvalue} indicatorColor="white" className="customTabs" 
+        onChange={(event, newValue) =>{setTabvalue(newValue) }}>
+
+        <Tab label="All" value="All" 
+            className={ tabvalue == 'All' ? 'customTabs_item active' : 'customTabs_item'} />   
+        {/*Set method remove Duplicate value from listing*/}
+        { [...new Set(ResumeData.projects.map((items) => items.tag ))].map( (n)=>  (
+            <Tab label={n}  value={n} className={tabvalue == n ? 'customTabs_item active' : 'customTabs_item'} />
+        
+        ))}
+    </Tabs>
+</Grid>
+{/*End Tabs*/}
+
+
+{/*Project*/}
+ <Grid item xs={12}>
+    <Grid container spacing={2}>
+      {ResumeData.projects.map( (pro) => (
+        <> 
+        {tabvalue == "All" || tabvalue == pro.tag ? (
+         <Grid item key={pro} xs={12} sm={6} md={4} >
+           <Grow in timeout={1000} key={pro}>
+             <Card className="CustomCard" onClick={ ()=> setProjectDialog(pro) }>
+                <CardActionArea>
+                <div className="media-custom">
+                    <CardMedia
+                    key={pro}
+                    className='CustomCard_image'
+                    image={pro.image[0]}
+                    title={pro.title}
+                    />
+                    </div>
+                 <CardContent>
+                    <Typography variant={"body2"} classname="CustomCard_title">
+                        {pro.title}
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" className="CustomCard_caption">
+                       {pro.caption}
+                    </Typography>
+                 </CardContent>
+                </CardActionArea>
+             </Card>
+            </Grow>
+         </Grid>
+
+        ) : null}
+        
+        </>
+      ))}
+
+    </Grid>
+ </Grid>
+{/*End Project*/}
+<Dialog style={{width:'70wh'}}   fullWidth className="projectDialog" open={projectDialog} onClose={ ()=> setProjectDialog(false)}>
+        <DialogTitle onClose={ ()=> setProjectDialog(false)}>
+         {projectDialog.title}
+        </DialogTitle>
+        
+        <DialogContent style={{height:'80vh'}}> 
+         {projectDialog.image && (
+             <Gallery images={projectDialog.image}/>
+         )}
+
+          <Typography className="projectDialog_description"> {projectDialog.description}</Typography>
+        </DialogContent>
+
+        <DialogActions className="projectDialog_actions"  >
+        {projectDialog?.links?.map( (key,x) => (
+            <Nav.Link href={key.link} to={key.link} className="href" target="_blank" className="projectDialog_icon">
+           
+                  <Button variant={ x==0? "danger" : "dark"} >{key.icon}</Button>  
+                   
+            </Nav.Link>
+        ))}
+         
+        </DialogActions>
+    </Dialog>
+     </Grid>
+    )
+}
+export default Portfolio;
