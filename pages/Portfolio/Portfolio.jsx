@@ -106,7 +106,7 @@ function Portfolio() {
          {projectDialog.title}
         </DialogTitle>
         
-        <DialogContent   className="projectDialog_Dcontent"> 
+        <DialogContent  className="projectDialog_Dcontent"> 
          {projectDialog.image && (
              <Gallery images={projectDialog.image}/>
          )}
