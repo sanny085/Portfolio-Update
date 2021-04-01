@@ -23,6 +23,11 @@ import googleKeep1 from '../assets/images/googleKeep1.JPG';
 import googleKeep2 from '../assets/images/googleKeep2.JPG';
 import amazonClone1 from '../assets/images/amazonClone1.JPG';
 import amazonClone2 from '../assets/images/amazonClone2.JPG';
+import KINGA from '../assets/images/KINGA.JPG';
+import KINGB from '../assets/images/KINGB.JPG';
+import Aierst from '../assets/images/Aierst.JPG';
+import Aierst1 from '../assets/images/Aierst1.JPG';
+
 
 
 const ResumeData = {
@@ -189,6 +194,66 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
         },
         { 
           link:'https://github.com/sanny085/Janta-Seva-Kendra',
+          icon:<GitHubIcon/>
+        },
+      ],  
+    },
+    {
+      tag:'Web Design',
+      image:[
+        Aierst,
+        Aierst1,
+      ],
+      title:'AIERST',
+      caption:'School Project',
+      description:'This is a Complete sample (UI) how projects work at School Management System. In this Project, I am creating a basic Frontend part using HTML, CSS, Bootstrap, JavaScript.',
+      links:[
+        { 
+          link:'https://indianidol.000webhostapp.com/AICT/home.html',
+          icon:<VisibilityIcon/>
+        },
+        { 
+          link:'https://github.com/sanny085/AIERT-SCHOOL',
+          icon:<GitHubIcon/>
+        },
+      ],  
+    },
+    {
+      tag:'Web Design',
+      image:[
+        KINGA,
+        KINGB,
+      ],
+      title:'KING AVIATION',
+      caption:'KING AVIATION Consultancy services to support aircraft maintenanc',
+      description:'King Aviation AIRPARTS & SERVICES PVT. LTD. offers you Aviation Consultancy services to support aircraft maintenance. Our reliable & rich connections ensure that our clients receive the best value. We strive in providing assistance to our clients in all the aviation linked matters.',
+      links:[
+        { 
+          link:'https://indianidol.000webhostapp.com/KING%20AVIATION%20AIR%20PARTS/home.html',
+          icon:<VisibilityIcon/>
+        },
+        { 
+          link:'https://github.com/sanny085/King-Aviation-Airparts',
+          icon:<GitHubIcon/>
+        },
+      ],  
+    },
+    {
+      tag:'Web Design',
+      image:[
+        googleKeep1,
+        googleKeep2,
+      ],
+      title:'Google Keep Clone',
+      caption:'A clone of Google Keep with some changing features.',
+      description:'The Clone of Google Keep written in Simple JavaScript with Bootstrap(CSS Framework), and had implemented some basics to look like Google Keep, with complex features like storing and fetching data from local storage.',
+      links:[
+        { 
+          link:'https://indianidol.000webhostapp.com/Google%20Keep%20Clone/google%20keep%20clone.html',
+          icon:<VisibilityIcon/>
+        },
+        { 
+          link:'https://github.com/sanny085/Google-Keep-Clone',
           icon:<GitHubIcon/>
         },
       ],  
