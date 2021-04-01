@@ -15,8 +15,8 @@ import CodeIcon from '@material-ui/icons/Code';
 import residence1 from '../assets/images/residence1.JPG';
 import residence2 from '../assets/images/residence2.JPG'; 
 import github1 from '../assets/images/github1.svg';
-
-const imageA = '../../assets/images/residence.JPG';
+import gym1 from '../assets/images/gym1.JPG'
+import gym2 from '../assets/images/gym2.JPG' 
 
 const ResumeData = {
     name:"Sanny Kumar",
@@ -151,7 +151,6 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
       tag:'React',
       image:[
         github1,
-        github1,
       ],
       title:'Project Library',
       caption:'A Short Description about project',
@@ -230,12 +229,12 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
     {
       tag:'PHP',
       image:[
-        'https://www.filepicker.io/api/file/iSyOrAqcTByarJkc2oGN',
-        'https://explore.easyprojects.net/wp-content/uploads/2016/07/Project-portfolio-management-934x640.jpg',
+        gym1,
+        gym2,
       ],
-      title:'PHP Project 1',
-      caption:'A Short Description about project ',
-      description:'This is my all project which shows',
+      title:'TheEnergyHub',
+      caption:'Bodybuilding is the use of progressive resistance exercise.',
+      description:'Wonderful set up of gym with great reliability, Good selection of equipments, updated equipments and best services.',
       links:[
         { 
           link:'https://indianidol.000webhostapp.com/Finatics%20private%20limited/Finatics%20Technology%20Private/about.html',
