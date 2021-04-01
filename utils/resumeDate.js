@@ -14,7 +14,7 @@ import CodeIcon from '@material-ui/icons/Code';
 
 import residence1 from '../assets/images/residence1.JPG';
 import residence2 from '../assets/images/residence2.JPG'; 
-import github1 from '../assets/images/github1.png';
+import github1 from '../assets/images/github1.svg';
 
 const imageA = '../../assets/images/residence.JPG';
 
@@ -151,10 +151,11 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
       tag:'React',
       image:[
         github1,
+        github1,
       ],
       title:'Project Library',
       caption:'A Short Description about project',
-      description:'This is my all project which shows',
+      description:'Git is the standard tool for source control. GitHub facilitates social coding by providing a web interface to the Git code repository and management tools for collaboration.And also work together on projects from anywhere. ',
       links:[
         { 
           link:'https://indianidol.000webhostapp.com/Finatics%20private%20limited/Finatics%20Technology%20Private/about.html',
