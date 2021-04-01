@@ -27,8 +27,8 @@ import KINGA from '../assets/images/KINGA.JPG';
 import KINGB from '../assets/images/KINGB.JPG';
 import Aierst from '../assets/images/Aierst.JPG';
 import Aierst1 from '../assets/images/Aierst1.JPG';
-
-
+import FoodR from '../assets/images/FoodR.JPG';
+import FoodR1 from '../assets/images/FoodR1.JPG';
 
 const ResumeData = {
     name:"Sanny Kumar",
@@ -261,19 +261,19 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
     {
       tag:'Web Design',
       image:[
-        googleKeep1,
-        googleKeep2,
+        FoodR,
+        FoodR1,
       ],
-      title:'Google Keep Clone',
-      caption:'A clone of Google Keep with some changing features.',
-      description:'The Clone of Google Keep written in Simple JavaScript with Bootstrap(CSS Framework), and had implemented some basics to look like Google Keep, with complex features like storing and fetching data from local storage.',
+      title:'Food Restaurant',
+      caption:'Food aplication connecting Restaurants in an area',
+      description:'An online portal for connecting Restaurants in an area. With this system we aim to avail food at doorstep with cash on delivery option.',
       links:[
         { 
-          link:'https://indianidol.000webhostapp.com/Google%20Keep%20Clone/google%20keep%20clone.html',
+          link:'https://sanny085.github.io/Food-Restaurant',
           icon:<VisibilityIcon/>
         },
         { 
-          link:'https://github.com/sanny085/Google-Keep-Clone',
+          link:'https://github.com/sanny085/Food-Restaurant',
           icon:<GitHubIcon/>
         },
       ],  
