@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Portfolio.css';
 
 import {
-
     Card,
     CardActionArea,
     Grid,
@@ -107,7 +106,7 @@ function Portfolio() {
          {projectDialog.title}
         </DialogTitle>
         
-        <DialogContent style={{height:'80vh'}}> 
+        <DialogContent   className="projectDialog_Dcontent"> 
          {projectDialog.image && (
              <Gallery images={projectDialog.image}/>
          )}
