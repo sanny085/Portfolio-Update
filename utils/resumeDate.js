@@ -21,6 +21,9 @@ import janta1  from '../assets/images/janta1.JPG';
 import janta2  from '../assets/images/janta2.JPG';
 import googleKeep1 from '../assets/images/googleKeep1.JPG';
 import googleKeep2 from '../assets/images/googleKeep2.JPG';
+import amazonClone1 from '../assets/images/amazonClone1.JPG';
+import amazonClone2 from '../assets/images/amazonClone2.JPG';
+
 
 const ResumeData = {
     name:"Sanny Kumar",
@@ -161,11 +164,11 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
       description:'Git is the standard tool for source control. GitHub facilitates social coding by providing a web interface to the Git code repository and management tools for collaboration.And also work together on projects from anywhere. ',
       links:[
         { 
-          link:'https://indianidol.000webhostapp.com/Finatics%20private%20limited/Finatics%20Technology%20Private/about.html',
+          link:'https://github.com/sanny085',
           icon:<VisibilityIcon/>
         },
         { 
-          link:'https://github.com/sanny085/The-Residence-Hotel',
+          link:'https://github.com/sanny085',
           icon:<GitHubIcon/>
         },
       ],  
@@ -205,7 +208,7 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
           icon:<VisibilityIcon/>
         },
         { 
-          link:'https://github.com/sanny085/The-Residence-Hotel',
+          link:'https://github.com/sanny085/Google-Keep-Clone',
           icon:<GitHubIcon/>
         },
       ],  
@@ -213,19 +216,19 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
      {
       tag:'React',
       image:[
-        'https://www.blog.duomly.com/wp-content/uploads/2020/06/react-js-projects-for-beginners_hud75f6dd1ee6f4b8d225f54bd20a0cfe4_22949_1200x0_resize_box_2.png',
-        'https://explore.easyprojects.net/wp-content/uploads/2016/07/Project-portfolio-management-934x640.jpg',
+        amazonClone1,
+        amazonClone2,
       ],
-      title:'React Project 2',
-      caption:'A Short Description about project ',
-      description:'This is my all project which shows',
+      title:'Amazon Clone',
+      caption:'A functional amazon clone made with React and MATERIAL-UI',
+      description:"This project is made only for educational purposes, and is in no way associated with Amazon. It only give look and feel.NOT the real Amazon Prime Video. It's just a clone built using ReactJS & Google Firebase.",
       links:[
         { 
-          link:'https://indianidol.000webhostapp.com/Finatics%20private%20limited/Finatics%20Technology%20Private/about.html',
+          link:'https://github.com/sanny085/amazon-clone',
           icon:<VisibilityIcon/>
         },
         { 
-          link:'https://github.com/sanny085/The-Residence-Hotel',
+          link:'https://github.com/sanny085/amazon-clone',
           icon:<GitHubIcon/>
         },
       ],  
