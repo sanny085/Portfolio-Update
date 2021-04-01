@@ -17,6 +17,8 @@ import residence2 from '../assets/images/residence2.JPG';
 import github1 from '../assets/images/github1.svg';
 import gym1 from '../assets/images/gym1.JPG'
 import gym2 from '../assets/images/gym2.JPG' 
+import janta1  from '../assets/images/janta1.JPG';
+import janta2  from '../assets/images/janta2.JPG';
 
 const ResumeData = {
     name:"Sanny Kumar",
@@ -169,19 +171,19 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
     {
       tag:'Web Design',
       image:[
-        'https://explore.easyprojects.net/wp-content/uploads/2016/07/Project-portfolio-management-934x640.jpg',
-        'https://explore.easyprojects.net/wp-content/uploads/2016/07/Project-portfolio-management-934x640.jpg',
-      ],
-        title:'Bootstrap Project 1',
-      caption:'A Short Description about project ',
+        janta1,
+        janta2,
+       ],
+        title:'Janta Seva Kendra',
+      caption:'The project has been Initiated with the help of Final Year Student Of BCREC 2K21.',
       description:'This is my all project which shows',
       links:[
         { 
-          link:'https://indianidol.000webhostapp.com/Finatics%20private%20limited/Finatics%20Technology%20Private/about.html',
+          link:'https://sanny085.github.io/Janta-Seva-Kendra/index.html',
           icon:<VisibilityIcon/>
         },
         { 
-          link:'https://github.com/sanny085/The-Residence-Hotel',
+          link:'https://github.com/sanny085/Janta-Seva-Kendra',
           icon:<GitHubIcon/>
         },
       ],  
@@ -227,21 +229,21 @@ about: "I am Sanny Kumar persuing my B-tech from Computer Science & Engineering 
       ],  
     },
     {
-      tag:'PHP',
+      tag:'( Bootstrap, PHP )',
       image:[
         gym1,
         gym2,
       ],
       title:'TheEnergyHub',
       caption:'Bodybuilding is the use of progressive resistance exercise.',
-      description:'Wonderful set up of gym with great reliability, Good selection of equipments, updated equipments and best services.',
+      description:'This project was made using most popular (CSS) Framework, which is Bootstrap. I tests on 3-4 different-different devices. Bootstrap makes products user-friendly and more attractive. It is fully responsive. This project imitates the working of a Gym and has all its related function. For User registration, I used PHP as a back-end programming language to fetch the data and store them. Database is used to store data so that data is kept secure and unharmed. The database is kept in an online server so that this website is not restricted to be used only on local machines or devices .',
       links:[
         { 
-          link:'https://indianidol.000webhostapp.com/Finatics%20private%20limited/Finatics%20Technology%20Private/about.html',
+          link:'https://theenergyhub.000webhostapp.com/home.php',
           icon:<VisibilityIcon/>
         },
         { 
-          link:'https://github.com/sanny085/The-Residence-Hotel',
+          link:'https://github.com/sanny085/TheEnergyHub',
           icon:<GitHubIcon/>
         },
       ],  
