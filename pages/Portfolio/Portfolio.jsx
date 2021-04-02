@@ -15,15 +15,14 @@ import ResumeData from "../../utils/resumeDate";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav,  Button } from 'react-bootstrap';
 
-import { Link} from "react-router-dom";
+ 
  
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogContent from '@material-ui/core/DialogContent'; 
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Gallery from '../../components/ImageGallery/Gallery';
  
@@ -51,10 +50,10 @@ function Portfolio() {
         onChange={(event, newValue) =>{setTabvalue(newValue) }}>
 
         <Tab label="All" value="All" 
-            className={ tabvalue == 'All' ? 'customTabs_item active' : 'customTabs_item'} />   
+            className={ tabvalue === 'All' ? 'customTabs_item active' : 'customTabs_item'} />   
         {/*Set method remove Duplicate value from listing*/}
         { [...new Set(ResumeData.projects.map((items) => items.tag ))].map( (n)=>  (
-            <Tab label={n}  value={n} className={tabvalue == n ? 'customTabs_item active' : 'customTabs_item'} />
+            <Tab label={n}  value={n} className={tabvalue === n ? 'customTabs_item active' : 'customTabs_item'} />
           ) )
         }
     </Tabs>
@@ -67,7 +66,7 @@ function Portfolio() {
     <Grid container spacing={2}>
       {ResumeData.projects.map( (pro) => (
         <> 
-        {tabvalue == "All" || tabvalue == pro.tag ? (
+        {tabvalue === "All" || tabvalue === pro.tag ? (
          <Grid item key={pro} xs={12} sm={6} md={4} >
            <Grow in timeout={1000} key={pro}>
              <Card className="CustomCard" onClick={ ()=> setProjectDialog(pro) }>
@@ -116,9 +115,9 @@ function Portfolio() {
 
         <DialogActions className="projectDialog_actions"  >
         { projectDialog?.links?.map( (key,x) => (
-            <Nav.Link href={key.link} to={key.link} className="href" target="_blank" className="projectDialog_icon">
+            <Nav.Link href={key.link} to={key.link}  target="_blank" className="projectDialog_icon">
                    
-                  <Button variant={ x==0? "danger" : "dark"} >{key.icon}</Button>  
+                  <Button variant={ x===0? "danger" : "dark"} >{key.icon}</Button>  
                    
             </Nav.Link>
         )) }
