@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Form, FormControl, Nav, Navbar, NavDropdown  } from 'react-bootstrap';
-import { Link, NavLink, withRouter } from "react-router-dom";
+import { Nav, Navbar} from 'react-bootstrap';
+import { NavLink, withRouter } from "react-router-dom";
 import CustomButton from "../Button/Button";
 import {
   HomeRounded,
@@ -10,7 +10,7 @@ import {
 import ResumeData from "../../utils/resumeDate";
 
 import "./Header.css";
-import { Grid } from "@material-ui/core";
+ 
 
 function Header(props) {
     const pathname = props?.location?.pathname;
@@ -27,19 +27,22 @@ function Header(props) {
       <Navbar.Collapse id="responsive-navbar-nav">
          <Nav className="mr-auto">
             {/*Resume link*/}
-            <Nav.Link as={NavLink} href="#resume" to="./" className={pathname == "/" ? "header_link_active" : "header_link"}>
+            <Nav.Link as={NavLink} href="#resume" to="./" className={pathname === "/" ? "header_link_active" : "header_link"}>
              Resume
             </Nav.Link>
-
             {/*Resume link*/}
-            <Nav.Link as={NavLink} href="#portofolio" to="/portfolio" className={pathname == "/portfolio" ? "header_link_active" : "header_link"}>
+            <Nav.Link as={NavLink} href="#portofolio" to="/portfolio" className={pathname === "/portfolio" ? "header_link_active" : "header_link"}>
              Portfolio
+            </Nav.Link>
+            {/*Conatct link*/}
+            <Nav.Link as={NavLink} href="#contact" to="/contact" className={pathname === "/contact" ? "header_link_active" : "header_link"}>
+             Contact
             </Nav.Link>
           </Nav>
         <Nav>
          <div className="header_right">
             {Object.keys(ResumeData.socials).map((key) => (
-              <Nav.Link href={ResumeData.socials[key].url} target="_blank">
+              <Nav.Link href={ResumeData.socials[key].url} target="_blank" key={key}>
                 {ResumeData.socials[key].icon}
               </Nav.Link>
 
