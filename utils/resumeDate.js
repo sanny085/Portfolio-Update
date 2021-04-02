@@ -35,13 +35,13 @@ const ResumeData = {
     Job:'Fresher',
     phone:'706 140 0417',
     Email:{
-      url: 'sannykumar085@gmail.com',
+      url: 'sannyku@gmail.com',
       title: 'Email',
       subtitle: 'sanny@gmail.com',
     },
     socials:{
       Facebook:{
-          url: 'https://www.facebook.com/profile.php?id=100034132069006',
+          url: 'https://www.facebook.com/profile.php?id=',
           title: 'MyFacebook',
           icon:<FacebookIcon/>,
       },
