@@ -17,12 +17,10 @@ function Footer() {
            <div className="footer_right">
             <Typography className="footer_copyright">
                Designed And Developed By &#9825;{" "}
-               <a href="./" >
-               {ResumeData.name}
-               </a>
+                 {ResumeData.name}
                <br/>
                &#169;{" "+(new Date().getFullYear())} Clone Idea From {" "}
-               <a href="https://themeforest.net/item/mat-html-vcard-template/21062060" target="_blank">
+               <a href="https://themeforest.net/item/mat-html-vcard-template/21062060" alt="Tavonline" target="_blank" rel="noreferrer">
                    Tavonline
                </a>.
              </Typography>
@@ -31,4 +29,5 @@ function Footer() {
         </div>
     )
 }
+
 export default Footer;
