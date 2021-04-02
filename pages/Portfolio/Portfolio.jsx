@@ -31,19 +31,19 @@ import Gallery from '../../components/ImageGallery/Gallery';
 
 function Portfolio() {
     const [tabvalue, setTabvalue] = useState("All");
-    
     const [projectDialog, setProjectDialog] = useState(false);
-    const [buttonColor, setButtonColor] = useState(0);
 
     return (
   <Grid container className="section p_30 pb_45">
-        
+
+
 {/*Portfolio*/}
 <Grid item className="section_title top_30">
     <span></span>
     <h6 className="section_title_text">Portfolio</h6>
 </Grid>
 {/*End Portfolio*/}
+
 
 {/*Tabs*/}
 <Grid item xs={12}>
@@ -55,8 +55,8 @@ function Portfolio() {
         {/*Set method remove Duplicate value from listing*/}
         { [...new Set(ResumeData.projects.map((items) => items.tag ))].map( (n)=>  (
             <Tab label={n}  value={n} className={tabvalue == n ? 'customTabs_item active' : 'customTabs_item'} />
-        
-        ))}
+          ) )
+        }
     </Tabs>
 </Grid>
 {/*End Tabs*/}
@@ -115,13 +115,13 @@ function Portfolio() {
         </DialogContent>
 
         <DialogActions className="projectDialog_actions"  >
-        {projectDialog?.links?.map( (key,x) => (
+        { projectDialog?.links?.map( (key,x) => (
             <Nav.Link href={key.link} to={key.link} className="href" target="_blank" className="projectDialog_icon">
-           
+                   
                   <Button variant={ x==0? "danger" : "dark"} >{key.icon}</Button>  
                    
             </Nav.Link>
-        ))}
+        )) }
          
         </DialogActions>
     </Dialog>
