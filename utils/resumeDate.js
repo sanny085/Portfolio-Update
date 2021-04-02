@@ -2,10 +2,7 @@ import React from 'react';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import {
-  AssignmentOutlined,
-  WebOutlined
-} from "@material-ui/icons";
+
 import VisibilityIcon from '@material-ui/icons/Visibility';
 
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
@@ -36,7 +33,7 @@ const ResumeData = {
     birthday:"25th Dec 1999",
     address:"Bhramarpur, Bihpur, Bhagalpur",
     Job:'Fresher',
-    phone:'808 467 6664',
+    phone:'706 140 0417',
     Email:{
       url: 'sannykumar085@gmail.com',
       title: 'Email',
