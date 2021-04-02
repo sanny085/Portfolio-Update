@@ -53,20 +53,20 @@ const Contact = () => {
                     </Typography>
                     <Typography className="contactInfo_item">
                       <span>Phone:</span> 
-                       <a className="mobResume" href={`tel: ${ResumeData.phone}`}>{" "}{ResumeData.phone}</a>
+                       <a className="mobResume" href={`tel: ${ResumeData.phone}`} rel="noreferrer">{" "}{ResumeData.phone}</a>
                     </Typography>
-                        <a href={`mailto: ${ResumeData.Email.url}`} className="emailResume" >
+                      <a href={`mailto: ${ResumeData.Email.url}`} className="emailResume" >
                         <Typography className="contactInfo_item">
                             <span>Email:</span> {ResumeData.Email.subtitle}
                         </Typography>
-                    </a>
+                      </a>
                     <Grid container className="contactInfo_socialsContainer">
 
-                      {Object.keys(ResumeData.socials).map(key => (
-                          <Grid item className="contactInfo_social">
-                            <a href={ResumeData.socials[key].url} target="_blank">{ResumeData.socials[key].icon}</a>
+                      { Object.keys(ResumeData.socials).map(key => (
+                          <Grid item className="contactInfo_social" >
+                            <a href={ResumeData.socials[key].url} key={key.icon} target="_blank" rel="noreferrer">{ResumeData.socials[key].icon}</a>
                           </Grid>
-                      ))}
+                      ))} 
                     </Grid>
                   </Grid>
                 </Grid>
