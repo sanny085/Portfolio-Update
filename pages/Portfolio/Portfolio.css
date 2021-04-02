@@ -79,7 +79,7 @@
 .projectDialog .projectDialog_image{
   max-height:280px;
   width:100%;
-  object-fit: cover;
+  object-fit: scale-down;
   object-position: center center;
 }
 .projectDialog .projectDialog_description{
@@ -94,6 +94,12 @@
 }
 .projectDialog .projectDialog_Dcontent{
     height:auto !important;
+}
+.image-gallery-bullets .image-gallery-bullet{
+  border: 1px solid darkslategray !important;
+}
+.image-gallery-bullets .image-gallery-bullet.active {
+  background: darkslategray !important;
 }
 .MuiDialogContent-root {
   flex: 1 1 auto;
