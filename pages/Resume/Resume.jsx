@@ -186,5 +186,4 @@ const Resume = () => {
     </Grid>
   );
 };
-
 export default Resume;
