@@ -33,15 +33,15 @@ const ResumeData = {
     birthday:"25th Dec 1999",
     address:"Bhramarpur, Bihpur, Bhagalpur",
     Job:'Fresher',
-    phone:'70XXXXXXX7',
+    phone:'706 140 0417',
     Email:{
-      url: 'sannyku@gmail.com',
+      url: 'sannykumar085@gmail.com',
       title: 'Email',
       subtitle: 'sanny@gmail.com',
     },
     socials:{
       Facebook:{
-          url: 'https://www.facebook.com/profile.php?id=',
+          url: 'https://www.facebook.com/profile.php?id=100034132069006',
           title: 'MyFacebook',
           icon:<FacebookIcon/>,
       },
