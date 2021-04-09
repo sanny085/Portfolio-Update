@@ -88,7 +88,6 @@ h6.section_title_text{
     height: 100%;
     text-align: center;
 }
-
 .service .service_title {
     font-size: 16px !important;
     font-weight: 500 !important;
@@ -96,7 +95,6 @@ h6.section_title_text{
     text-align: center;
     padding-top:15px !important;
 }
-
 .service .service_description {
     color: #989898 !important;
     border-color: var(--main-color) !important;
@@ -109,14 +107,12 @@ div .service_upper .service_icon{
     padding:15px;
     border-radius:100%; 
 }
-
 .service_icon > .MuiSvgIcon-root {
     font-size: 40px !important;
     margin-left: 0 !important;
     font-weight: 300!important;
     color: darkslategray !important;
 }
-
 /*END SERVICES*/
 
 /*SKILLS*/
@@ -153,27 +149,3 @@ div .service_upper .service_icon{
 /*END SKILLS*/
 
 
-/*CONTACT*/
-
-.contactInfo_item {
-    line-height: 34px !important;
-    font-size: 14px !important;
-    color: #787878;
-}
-
-.contactInfo_item > span {
-    color: black;
-    font-weight: 500;
-}
-
-.contactInfo_socialsContainer {
-    margin-top: 15px;
-}
-
-.contactInfo_social > a > .MuiSvgIcon-root {
-    font-size: 16px !important;
-    margin-right: 10px;
-    color: black;
-}
-
-/*END CONTACT*/
