@@ -54,7 +54,6 @@ function Header(props) {
         </Nav>
       </Navbar.Collapse>
 </Navbar>
- 
 </>
     );
 }
