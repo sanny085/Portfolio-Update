@@ -118,7 +118,7 @@
   .content {
     padding-bottom: 45px;
   }
- .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
     padding: 0px !important; 
  }
  .MuiContainer-root {
