@@ -146,6 +146,11 @@ div .service_upper .service_icon{
 
 }
 
+.YourHighlightClass{
+    color:red !important;
+    background-color: hsla(46, 100%, 82%, 0.986) !important;
+}
+
 /*END SKILLS*/
 
 
