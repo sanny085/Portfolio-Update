@@ -9,6 +9,9 @@ import { Paper, Typography, Icon} from "@material-ui/core";
 import { SchoolRounded, WorkRounded} from "@material-ui/icons";
 import ResumeData from "../../utils/resumeDate";
 
+import Highlighter from "react-highlight-words";
+
+
 import "./Resume.css";
 import { Grid } from "@material-ui/core";
  
@@ -26,7 +29,14 @@ const Resume = () => {
           <Grid container className="top_30">
             <Grid item>
               <Typography variant="body2" className="aboutme_text">
-                {ResumeData.about}
+              
+                <Highlighter
+                  highlightClassName="YourHighlightClass"
+                  searchWords={[" Computer Science & Engineering "]}
+                  autoEscape={true}
+                  textToHighlight={`${ResumeData.about}`}
+                />
+ 
               </Typography>
             </Grid>
           </Grid>
@@ -186,4 +196,5 @@ const Resume = () => {
     </Grid>
   );
 };
+
 export default Resume;
