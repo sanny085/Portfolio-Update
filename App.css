@@ -118,4 +118,17 @@
   .content {
     padding-bottom: 45px;
   }
+ .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 0px !important; 
+ }
+ .MuiContainer-root {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+ 
 }
